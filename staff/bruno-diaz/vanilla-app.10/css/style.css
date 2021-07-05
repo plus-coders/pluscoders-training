@@ -1,0 +1,86 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,400&display=swap');
+
+@import url("variables.css");
+
+@import url("animations.css");
+
+/* COMPONENTS */
+
+@import url("c-loading.css");
+
+@import url("c-dropdown.css");
+
+@import url("c-modal.css");
+
+@import url("c-header.css");
+
+@import url("c-search.css");
+
+@import url("c-pagination.css");
+
+@import url("c-form.css");
+
+/* PAGES */
+
+@import url("p-backofficeAccess.css");
+
+* { font-family: 'Roboto', sans-serif; }
+
+
+
+
+
+#resultsWrapper a {
+    text-decoration: none;
+    color: #333333;
+}
+
+#resultsWrapper a:hover .result__title {
+    text-decoration: underline;
+}
+
+
+
+.accessPanel {
+    width: 400px;
+    margin: 48px auto;
+    display: block;
+}
+
+#feedback {
+    background-color: pink;
+    position: absolute;
+    top: 0;
+}
+
+
+.button {
+    height: 33px;
+    margin: 8px;
+    padding: 8px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.button > i {
+    font-size: 15px;
+    margin-right: 8px;
+}
+
+/* Types of buttons */
+
+.button__cta,
+.button__submit {
+    background-color: var(--color-cta);
+    color: white;
+}

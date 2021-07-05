@@ -1,0 +1,24 @@
+nav { margin: 16px 0; }
+a {
+    color: #0588BC;
+    padding: 8px;
+}
+.router-link-exact-active,
+.router-link-active {
+    text-decoration: none;
+    background-color: #0588BC;
+    color: white;
+    cursor: default;
+}
+
+.wishes {
+    background-color: indianred;
+    color: white;
+    padding: 16px;
+}
+
+.todos {
+    background-color: Teal;
+    color: white;
+    padding: 16px;
+}

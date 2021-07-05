@@ -1,0 +1,53 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,400&display=swap');
+
+@import url("variables.css");
+
+@import url("animations.css");
+
+/* COMPONENTS */
+
+@import url("header.css");
+
+@import url("searchComponent.css");
+
+@import url("pagination.css");
+
+* { font-family: 'Roboto', sans-serif; }
+
+
+
+
+
+.backofficeForm__link {
+    text-transform: uppercase;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: teal;
+    border: 1px solid #cccccc;
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backofficeForm__link--active {
+    background-color: #ffffff;
+    border-bottom: none;
+}
+
+
+#resultsWrapper a {
+    text-decoration: none;
+    color: #333333;
+}
+
+#resultsWrapper a:hover .result__title {
+    text-decoration: underline;
+}
+

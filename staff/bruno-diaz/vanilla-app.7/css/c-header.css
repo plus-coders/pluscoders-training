@@ -1,0 +1,78 @@
+#header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    padding: 8px 16px;
+    border-bottom: 1px solid #cccccc;
+}
+
+#header h1 { font-size: 16px; color: #aaaaaa; }
+
+.acountDropdown {
+    position: relative;
+    /* text-align: right; */
+    display: flex;
+    align-items: center;
+}
+
+.acountDropdown i {
+    margin-left: 16px;
+    font-size: 21px;
+}
+
+.acountDropdown__link {
+    padding: 0 16px;
+    color: var(--color-cta);
+    cursor: pointer;
+}
+.acountDropdown__link:hover {
+    color: var(--color-cta-lighten);
+}
+
+.acountDropdown__link .fa.fa-opened {
+    transform: rotate(-180deg);
+    transition-duration: .25s;
+}
+
+.acountDropdown__link .fa:not(.fa-opened) {
+    transform: rotate(0);
+    transition-duration: .25s;
+}
+
+.acountDropdown__menu {
+    background-color: #f7f7f7;
+    border: 1px solid #cccccc;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: max-content;
+    margin: 8px 0;
+    overflow: hidden;    
+}
+
+.acountDropdown__menu > li {
+   margin: 4px 0;
+   padding: 8px 16px;
+   cursor: pointer;
+   color: var(--color-cta);
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+}
+
+.acountDropdown__menu > li:hover {
+    background-color: Gainsboro;
+    color: var(--color-cta-darken);
+}
+
+.acountDropdown__menu.acountDropdown__menu--opened {
+    transition: height .1s linear;
+    height: 87px;
+}
+.acountDropdown__menu:not(.acountDropdown__menu--opened) {
+    transition: height .1s ease-in;
+    height: 0px;
+}

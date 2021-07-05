@@ -1,0 +1,29 @@
+@keyframes button-hover {
+  from { background-color: var(--color-cta); }
+  to { background-color: var(--color-cta-lighten); }
+}
+
+@keyframes searchComponent-title-hidden {
+  from {
+    opacity: 0;
+    height: 54px;
+  }
+  to {
+    opacity: 1;
+    height: 0;
+  }
+}
+
+@keyframes searchComponent-padding {
+  from { padding: 80px 0 40px; }
+  to { padding: 30px 0; }
+}
+
+@keyframes searchComponent-spinners-loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

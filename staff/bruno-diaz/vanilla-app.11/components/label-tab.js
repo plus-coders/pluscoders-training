@@ -1,0 +1,1 @@
+class TabsPanel extends HTMLElement {}

@@ -1,0 +1,26 @@
+#header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    padding: 8px 16px;
+    border-bottom: 1px solid #cccccc;
+}
+
+#header h1 { font-size: 16px; color: #aaaaaa; }
+
+#header .header__logout {
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #aaaaaa;
+    color: #aaaaaa;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: transparent;
+}
+#header .header__logout:hover {
+    border: 1px solid IndianRed;
+    color: IndianRed;
+    background-color: transparent;
+    cursor: pointer;
+}

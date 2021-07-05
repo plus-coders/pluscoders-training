@@ -1,0 +1,55 @@
+
+
+.modal__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__wrapper {
+    position: absolute;
+    top: 10vh;
+    left: 10%;
+    width: 80%;
+    min-width: 500px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+    padding: 0 32px 56px;
+}
+
+.modalHeader {
+    border-bottom: 1px solid #cccccc;
+    margin: 0 -32px 56px;
+    padding: 0 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.modalHeader__title {
+    font-size: 22px;
+    font-weight: normal;
+    padding: 16px;
+    opacity: .7;
+}
+
+.modalHeader__close {
+    font-size: 22px;
+    padding: 16px;
+    opacity: .4;
+}
+.modalHeader__close:hover {
+    color: var(--color-cta);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.modal--editProfile .modal__wrapper { min-height: 545px;}

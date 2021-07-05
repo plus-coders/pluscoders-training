@@ -1,0 +1,13 @@
+:root {
+  /* Base color using HSL - TEAL */
+  --hue: 180;
+  --saturation: 100%;
+  --light: 25%;
+  
+  /* Base color in variable */
+  --color-cta: hsl(var(--hue), var(--saturation), var(--light));
+  /* Base color lighten using calc */
+  --color-cta-lighten: hsl(var(--hue), var(--saturation), calc(var(--light) + 10%));
+  /* Base color darken using calc */
+  --color-cta-darken: hsl(var(--hue), var(--saturation), calc(var(--light) - 10%));
+}

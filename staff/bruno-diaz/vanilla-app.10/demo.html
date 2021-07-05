@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <script>
+            
+class ModalElement extends HTMLElement {
+    constructor() {
+        super()
+
+        this.titleModal
+    }
+
+    static get observedAttributes() {
+        return ['titleModal']
+    }
+
+    attributeChangedCallback(nameAtr, oldValue, newValue) {
+        switch (nameAtr) {
+            case 'titleModal':
+                this.titleModal = newValue
+                break
+        }
+    }
+
+    connectedCallback() {
+        this.innerHTML = `
+            <section class="modal modal--editProfile">
+                <div class="modal__background"></div>
+                <div class="modal__wrapper">
+                    <div class="modalHeader">
+                        <h3 class="modalHeader__title">${this.titleModal}</h3>
+                        <i class="fa fa-times modalHeader__close"></i>
+                    </div>
+                    <div id="modalContent" class="modal__content">HOLA</div>
+                </div>
+            </section>`
+    }
+}
+customElements.define('modal-element', ModalElement)
+
+var modal = document.createElement('modal-element')
+modal.titleModal = "Edit account"
+document.body.append(modal)
+
+var xxx = modal.querySelector('#modalContent')
+xxx.innerHTML = 'ADIOS'
+        </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+h1 { text-align: center; }
+
+nav { margin: 16px 0; }
+a {
+    color: #0588BC;
+    padding: 8px;
+}
+.router-link-exact-active,
+.router-link-active {
+    text-decoration: none;
+    background-color: #0588BC;
+    color: white;
+    cursor: default;
+}
+
+.wishes {
+    background-color: indianred;
+    color: white;
+    padding: 16px;
+}
+
+.todos {
+    background-color: Teal;
+    color: white;
+    padding: 16px;
+}
+
+form {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 16px;
+    border-top: 1px solid #cccccc;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+form p {
+    font-weight: bold;
+    color: #555555;
+    margin-top: 0;
+    margin-right: 4px;
+    display: inline;
+}
+
+.button--delete {
+    background-color: transparent;
+    border: none;
+    color: #565656;
+    cursor: pointer;
+}
+.button--delete:before {
+    content: '['
+}
+.button--delete:after {
+    content: ']'
+}

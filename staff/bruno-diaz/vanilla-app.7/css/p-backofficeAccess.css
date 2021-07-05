@@ -1,0 +1,51 @@
+.backofficeAccess {
+    width: 400px;
+    margin: 48px auto;
+}
+
+.backofficeAccess__form {
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-top: none;
+    margin: 0 auto;
+    padding: 32px 0 16px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.switchButtons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.switchButtons > * {
+    width: 50%;
+}
+
+.switchButtons__link {
+    text-transform: uppercase;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--color-cta);
+    border: 1px solid #cccccc;
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.switchButtons__link:not(.switchButtons__link--active):hover {
+    color: var(--color-cta-lighten);;
+}
+
+.switchButtons__link.switchButtons__link--active {
+    background-color: #ffffff;
+    border-bottom: none;
+    cursor: default;
+    pointer-events: none;
+}

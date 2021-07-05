@@ -1,0 +1,79 @@
+.form {
+  width: 400px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 24px auto;
+}
+
+.formContainer {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form__element {
+  margin: 4px 0;
+  padding: 4px 0;
+}
+
+.form__element--input {
+  margin: 4px 0;
+  padding: 4px 8px;
+  font-size: 17px;
+}
+.form__element--input:focus {
+  outline-color: var(--color-cta);
+  color: var(--color-cta);
+}
+
+.form__button {
+  width: 192px;
+  margin: 32px auto;
+  height: 33px;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__button--submit {
+  background-color: var(--color-cta);
+  color: white;
+  border: none;
+}
+.form__button--submit:hover {
+  animation: button-hover .2s ease-in-out;
+
+  background-color: var(--color-cta-lighten);
+  border: 1px solid var(--color-cta);
+}
+
+.form__button--delete {
+  background-color: FireBrick;
+  color: white;
+  border: none;
+}
+.form__button--delete:hover {
+  background-color: rgb(230, 61, 61);
+  color: white;
+  border: 1px solid FireBrick;
+}
+
+.form__feedback {
+  color: FireBrick;
+  min-width: 270px;
+  max-width: 310px;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4;
+  display: none;
+}

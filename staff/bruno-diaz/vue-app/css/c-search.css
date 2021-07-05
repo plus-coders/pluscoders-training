@@ -1,0 +1,145 @@
+#searchComponent {
+  padding: 80px 0 40px;
+  margin: 0 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.searchComponent__titleWrapper {
+  font-size: 22px;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 54px;
+}
+.searchComponent__title {
+  font-size: 22px;
+  position: relative;
+  height: 54px;
+  width: 281px;
+  margin: 16px auto;
+  opacity: .6;
+}
+
+.searchComponent__form {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: centeR;
+  align-items: center;
+}
+
+.searchComponent__select,
+.searchComponent__input {
+  height: 32px;
+  padding: 0 8px;
+}
+
+.searchComponent__select {
+  width: 100px;
+}
+
+.searchComponent__input {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 8px;
+}
+
+.searchComponent__submit {
+  width: 100px;
+  height: 32px;
+  padding: 8px;
+  background-color: var(--color-cta);
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.searchComponent__submit:hover {
+  animation: button-hover .2s ease-in-out;
+
+  background-color: var(--color-cta-lighten);
+  border: 1px solid var(--color-cta);
+}
+
+/* -------------------------------------------------------------- Styles when the component is in use */
+
+#searchComponent.searchComponent--used {
+  animation: searchComponent-padding .5s ease-in-out;
+  
+  padding: 30px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.searchComponent--used .searchComponent__titleWrapper {
+  animation: searchComponent-title-hidden .5s ease-in-out;
+  
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* -------------------------------------------------------------- Loading when the component is searching */
+
+/* .searchComponent--searching .searchComponent__submit:disabled {
+  background-color: var(--color-cta);
+  border: none;
+  animation: none;
+}
+
+.searchComponent--searching .searchComponent__submit span {
+  animation: searchComponent-spinners-loading 0.6s infinite alternate;
+
+  display: inline-block;
+  vertical-align: middle;
+  width: .6em;
+  height: .6em;
+  margin: .19em;
+  background: #009B9E;
+  border-radius: .6em;
+}
+.searchComponent--searching .searchComponent__submit span:nth-of-type(2) {
+  animation-delay: 0.2s;
+  background: #00A77D;
+}
+.searchComponent--searching .searchComponent__submit span:nth-of-type(3) {
+  animation-delay: 0.4s;
+  background: #00B247;
+}
+.searchComponent--searching .searchComponent__submit span:nth-of-type(4) {
+  animation-delay: 0.6s;
+  background: #5AB027;
+}
+.searchComponent--searching .searchComponent__submit span:nth-of-type(5) {
+  animation-delay: 0.8s;
+  background: #A0B61E;
+} */
+
+/* -------------------------------------------------------------- Search results */
+
+#resultsWrapper {
+  width: 90%;
+  max-width: 991px;
+  margin: 0 auto;
+}
+
+.resultsItem {
+  margin: 24px 0;
+}
+
+.resultsItem__title {
+  font-size: 20px;
+  color: Teal;
+  margin: 8px 0;
+}
+
+.resultsItem__preview {
+  font-size: 14px;
+  opacity: .8;
+}
+
